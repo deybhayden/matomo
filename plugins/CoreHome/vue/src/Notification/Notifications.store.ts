@@ -37,8 +37,8 @@ class NotificationsStore {
     this.checkMessage(notification.message);
 
     // remove existing notification before adding
-    if (notification.id) {
-      this.remove(notification.id);
+    if (notification.notificationId) {
+      this.remove(notification.notificationId);
     }
     this.privateState.notifications.push(notification);
   }
@@ -47,8 +47,8 @@ class NotificationsStore {
     this.checkMessage(notification.message);
 
     // remove existing notification before adding
-    if (notification.id) {
-      this.remove(notification.id);
+    if (notification.notificationId) {
+      this.remove(notification.notificationId);
     }
     this.privateState.notifications.unshift(notification);
   }
